@@ -8,8 +8,13 @@ import android.support.annotation.NonNull;
  */
 public class SelectorViewController {
 
+    static final int EMPTY = -1;
+
     int titleTextAppearance;
     int valueTextAppearance;
+
+    int titleTextSize;
+    int valuesTextSize;
 
     int titleTextColor;
     int valuesTextColor;

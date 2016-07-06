@@ -6,9 +6,12 @@ import android.graphics.Canvas;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import static com.coulddog.selectorview.SelectorViewController.EMPTY;
 
 public class SelectorView extends RelativeLayout {
 
@@ -33,13 +36,14 @@ public class SelectorView extends RelativeLayout {
                 R.styleable.SelectorView,
                 0, 0);
 
-        P.titleTextAppearance = a.getResourceId(R.styleable.SelectorView_svTitleTextAppearance, android.R.style.TextAppearance_Small);
-        P.valueTextAppearance = a.getResourceId(R.styleable.SelectorView_svValuesTextAppearance, android.R.style.TextAppearance_Medium);
+        P.titleTextAppearance = a.getResourceId(R.styleable.SelectorView_svTitleTextAppearance, EMPTY);
+        P.valueTextAppearance = a.getResourceId(R.styleable.SelectorView_svValuesTextAppearance, EMPTY);
 
-        P.titleTextColor = a.getColor(R.styleable.SelectorView_svTitleTextColor,
-                ViewCompatUtil.getColor(context, android.R.color.black));
-        P.valuesTextColor = a.getColor(R.styleable.SelectorView_svValueTextColor,
-                ViewCompatUtil.getColor(context, android.R.color.black));
+        P.titleTextSize = a.getDimensionPixelSize(R.styleable.SelectorView_svTitleTextSize, EMPTY);
+        P.valuesTextSize = a.getDimensionPixelSize(R.styleable.SelectorView_svValuesTextSize, EMPTY);
+
+        P.titleTextColor = a.getColor(R.styleable.SelectorView_svTitleTextColor, EMPTY);
+        P.valuesTextColor = a.getColor(R.styleable.SelectorView_svValueTextColor, EMPTY);
 
         P.titleText = a.getText(R.styleable.SelectorView_svTitleText);
 
@@ -65,13 +69,15 @@ public class SelectorView extends RelativeLayout {
         params.addRule(BELOW, android.R.id.text1);
         addView(valuesTextView,params);
 
-        ViewCompatUtil.setTextAppearanceToTextView(titleTextView, P.titleTextAppearance);
-        ViewCompatUtil.setTextAppearanceToTextView(valuesTextView, P.valueTextAppearance);
 
-        titleTextView.setTextColor(P.titleTextColor);
-        valuesTextView.setTextColor(P.valuesTextColor);
+        if (P.titleTextAppearance != EMPTY) ViewCompatUtil.setTextAppearanceToTextView(titleTextView, P.titleTextAppearance);
+        if (P.valueTextAppearance != EMPTY) ViewCompatUtil.setTextAppearanceToTextView(valuesTextView, P.valueTextAppearance);
 
+        if (P.titleTextSize != EMPTY) titleTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, P.titleTextSize);
+        if (P.valuesTextSize != EMPTY) valuesTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, P.valuesTextSize);
 
+        if (P.titleTextColor != EMPTY) titleTextView.setTextColor(P.titleTextColor);
+        if (P.valuesTextColor != EMPTY) valuesTextView.setTextColor(P.valuesTextColor);
 
     }
 

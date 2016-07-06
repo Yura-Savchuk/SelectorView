@@ -18,6 +18,8 @@
             <enum name="oneTextField" value="2"/>
             <enum name="appearsTextField" value="3"/>
         </attr>
+        <attr name="svTitleTextSize" format="dimension"/>
+        <attr name="svValuesTextSize" format="dimension"/>
     </declare-styleable>
 
 </resources>

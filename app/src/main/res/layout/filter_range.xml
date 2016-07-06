@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_range_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:background="@android:color/holo_red_dark"
+            />
+
+        <com.coulddog.selectorview.SelectorView
+            android:id="@+id/selectorView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:svTitleTextAppearance="@android:style/TextAppearance.Small"
+            app:svValuesTextAppearance="@android:style/TextAppearance.Small"
+            app:svTitleText="Номер"
+            app:svTitleTextColor="#727272"
+            app:svValueTextColor="@android:color/black"
+            app:svShowDefaultArrow="false"
+            app:svSelectionMode="multiple"
+            app:svSelectorViewMode="appearsTextField"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C4C4C4"
+        android:layout_marginLeft="50dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SelectorView">
+        <attr name="svTitleTextAppearance" format="reference" />
+        <attr name="svTitleTextColor" format="color" />
+        <attr name="svTitleText" format="string"/>
+        <attr name="svValuesTextAppearance" format="reference" />
+        <attr name="svValueTextColor" format="color" />
+        <attr name="svShowDefaultArrow" format="boolean"/>
+        <attr name="svArrowColor" format="color"/>
+        <attr name="svSelectionMode" format="enum">
+            <enum name="single" value="1"/>
+            <enum name="multiple" value="2"/>
+        </attr>
+        <attr name="svSelectorViewMode" format="enum">
+            <enum name="twoTextField" value="1"/>
+            <enum name="oneTextField" value="2"/>
+            <enum name="appearsTextField" value="3"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/macbookpro/AndroidStudioProjects/ValuePicker/app/build/intermediates/exploded-aar/ValuePicker/selectorview/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="17a2a9b45b05a09075e4eac74211ef6ee6642430">
-        <dex dex="/Users/macbookpro/AndroidStudioProjects/ValuePicker/app/build/intermediates/pre-dexed/debug/ValuePicker-selectorview-unspecified_a83a414b150fe291da128355d942fd73033362da.jar" />
-    </item>
-
-</items>
+<items version="2" />

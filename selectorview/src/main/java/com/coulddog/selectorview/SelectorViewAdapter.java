@@ -12,8 +12,8 @@ import java.util.List;
  */
 public class SelectorViewAdapter {
 
-    @NonNull
-    private final List<? extends Checkable> values;
+    @Nullable
+    private List<? extends Checkable> values;
     @NonNull
     private final List<? extends Checkable> temporaryValues;
     String title;
@@ -23,22 +23,29 @@ public class SelectorViewAdapter {
     private final SelectorViewDialogDelegate delegate;
     SelectionMode selectionMode;
 
-    public SelectorViewAdapter(@NonNull List<String> values, @NonNull SelectorViewDialogDelegate delegate) {
-        this(delegate, new ArrayList<CheckableString>());
-        for (String value : values) {
-            ((List<CheckableString>)this.values).add(new CheckableString(value));
+    public SelectorViewAdapter(@Nullable List<String> values, @NonNull SelectorViewDialogDelegate delegate) {
+        this(delegate, values == null ? null : new ArrayList<Checkable>());
+        if (values != null) {
+            for (String value : values) {
+                assert this.values != null;
+                ((List<CheckableString>) this.values).add(new CheckableString(value));
+            }
         }
     }
 
-    public SelectorViewAdapter(@NonNull SelectorViewDialogDelegate delegate, @NonNull List<? extends Checkable> values) {
+    public SelectorViewAdapter(@NonNull SelectorViewDialogDelegate delegate, @Nullable List<? extends Checkable> values) {
         this.values = values;
         this.temporaryValues = new ArrayList<>();
         this.delegate = delegate;
     }
 
-    @NonNull
+    @Nullable
     List<? extends Checkable> getValues() {
         return values;
+    }
+
+    public void setValues(@Nullable List<? extends Checkable> values) {
+        this.values = values;
     }
 
     public void setTitle(@NonNull String title) {

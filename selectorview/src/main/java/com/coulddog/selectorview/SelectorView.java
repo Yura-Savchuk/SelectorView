@@ -131,15 +131,17 @@ public class SelectorView extends RelativeLayout {
                         "or SelectorView.setTitle(), or in view layout.");
             }
             String selectedText = "";
-            for (Checkable item : adapter.getValues()) {
-                if (item.isSelected()) {
-                    if (selectedText.isEmpty()) {
-                        selectedText = item.getText();
-                        if (adapter.selectionMode == SelectionMode.Single) {
-                            break;
+            if (adapter.getValues() != null) {
+                for (Checkable item : adapter.getValues()) {
+                    if (item.isSelected()) {
+                        if (selectedText.isEmpty()) {
+                            selectedText = item.getText();
+                            if (adapter.selectionMode == SelectionMode.Single) {
+                                break;
+                            }
+                        } else {
+                            selectedText += ", " + item.getText();
                         }
-                    } else {
-                        selectedText += ", " + item.getText();
                     }
                 }
             }

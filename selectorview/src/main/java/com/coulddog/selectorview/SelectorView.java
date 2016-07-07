@@ -186,4 +186,10 @@ public class SelectorView extends RelativeLayout {
         P.selectorViewMode = selectorViewMode;
     }
 
+    @Nullable
+    OnValuesChangeListener onValuesChangeListener;
+
+    public void setOnValuesChangeListener(@Nullable OnValuesChangeListener onValuesChangeListener) {
+        this.onValuesChangeListener = onValuesChangeListener;
+    }
 }

@@ -65,8 +65,12 @@ public class SelectorViewAdapter {
     SelectionDialogCallback selectionDialogCallback = new SelectionDialogCallback() {
         @Override
         public void onComplete() {
+            assert values != null;
             copyValues(temporaryValues, values);
             notifyDataSetChanged();
+            if (selectorView != null && selectorView.onValuesChangeListener != null) {
+                selectorView.onValuesChangeListener.onValueChanges(selectorView, values);
+            }
         }
     };
 

@@ -9,6 +9,7 @@ An android custom view for single and multiple items selection.
 
 # Usage
 ##In Layout
+``` xml
 <com.coulddog.selectorview.SelectorView
         android:id="@+id/selectorView"
         android:layout_width="match_parent"
@@ -23,7 +24,11 @@ An android custom view for single and multiple items selection.
         app:svSelectionMode="multiple"
         app:svSelectorViewMode="appearsTextField"
         />
+```
 ##In Source
+in **Activity of Fragment**
+``` java
+
 private static final String title = "Animals";
     private static final List<CheckableString> testList = new ArrayList<CheckableString>() {{
         add(new CheckableString("Cow"));
@@ -67,3 +72,4 @@ private static final String title = "Animals";
             }
         }
     };
+ ```

@@ -7,9 +7,6 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by macbookpro on 04.07.16.
- */
 public class SelectorViewAdapter {
 
     @Nullable
@@ -23,6 +20,7 @@ public class SelectorViewAdapter {
     private final SelectorViewDialogDelegate delegate;
     SelectionMode selectionMode;
 
+    @SuppressWarnings("unchecked")
     public SelectorViewAdapter(@Nullable List<String> values, @NonNull SelectorViewDialogDelegate delegate) {
         this(delegate, values == null ? null : new ArrayList<Checkable>());
         if (values != null) {
@@ -77,6 +75,7 @@ public class SelectorViewAdapter {
     View.OnClickListener onSelectorViewClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            assert values != null;
             copyValues(values, temporaryValues);
             delegate.showDialog(temporaryValues, title, selectionMode, selectionDialogCallback);
         }
@@ -86,6 +85,7 @@ public class SelectorViewAdapter {
         this.selectorView = selectorView;
     }
 
+    @SuppressWarnings("unchecked")
     private static void copyValues(@NonNull List from, @NonNull List to) {
         to.clear();
         for (Object item : from) {

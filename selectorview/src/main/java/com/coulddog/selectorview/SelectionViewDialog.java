@@ -13,10 +13,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by macbookpro on 04.07.16.
- */
 public class SelectionViewDialog extends AlertDialog {
+
+    private static final String DEF_APPLY = "Apply";
+    private static final String DEF_CENCEL = "Cancel";
 
     private SelectionDialogCallback callback;
     private SelectionMode selectionMode;
@@ -52,8 +52,8 @@ public class SelectionViewDialog extends AlertDialog {
         private String title;
         private SelectionMode selectionMode;
         private List<? extends com.coulddog.selectorview.Checkable> values;
-        private String applyButtonText = "Принять";
-        private String closeButtonText = "Отмена";
+        private String applyButtonText = DEF_APPLY;
+        private String closeButtonText = DEF_CENCEL;
         private SelectionDialogCallback selectionDialogCallback;
         private int singleChoiceLayout = EMPTY;
         private int multipleChoiceLayout = EMPTY;

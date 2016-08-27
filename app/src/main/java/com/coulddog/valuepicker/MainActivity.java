@@ -1,13 +1,10 @@
 package com.coulddog.valuepicker;
 
-import android.content.DialogInterface;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 
 import com.coulddog.selectorview.Checkable;
 import com.coulddog.selectorview.CheckableString;
@@ -17,25 +14,24 @@ import com.coulddog.selectorview.SelectionViewDialog;
 import com.coulddog.selectorview.SelectorView;
 import com.coulddog.selectorview.SelectorViewAdapter;
 import com.coulddog.selectorview.SelectorViewDialogDelegate;
-import com.coulddog.selectorview.SelectorViewMode;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String title = "Номер";
+    private static final String title = "Animals";
     private static final List<CheckableString> testList = new ArrayList<CheckableString>() {{
-        add(new CheckableString("Первый"));
-        add(new CheckableString("Второй"));
-        add(new CheckableString("Третий"));
-        add(new CheckableString("Четвертый"));
-        add(new CheckableString("Пятый"));
-        add(new CheckableString("Шестой"));
-        add(new CheckableString("Седьмой"));
-        add(new CheckableString("Восьмой"));
-        add(new CheckableString("Девятый"));
-        add(new CheckableString("Десятый"));
+        add(new CheckableString("Cow"));
+        add(new CheckableString("Rabbit"));
+        add(new CheckableString("Fox"));
+        add(new CheckableString("Dog"));
+        add(new CheckableString("Lion"));
+        add(new CheckableString("Puma"));
+        add(new CheckableString("Bear"));
+        add(new CheckableString("Cat"));
+        add(new CheckableString("Mouse"));
+        add(new CheckableString("Chicken"));
     }};
 
     @Override
@@ -45,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
         SelectorView selectorView = (SelectorView) findViewById(R.id.selectorView);
         SelectorViewAdapter adapter = new SelectorViewAdapter(selectorViewDialogDelegate, testList);
-//        adapter.setTitle(title);
+        adapter.setTitle(title);
+        assert selectorView != null;
         selectorView.setAdapter(adapter);
 
     }
@@ -62,15 +59,6 @@ public class MainActivity extends AppCompatActivity {
                         .setMultipleChoiceLayout(R.layout.select_multiple_choice)
                         .setListViewLayout(R.layout.select_list_view)
                         .create();
-                dialog.setOnShowListener(new DialogInterface.OnShowListener() {
-                    @Override
-                    public void onShow(DialogInterface d) {
-                        dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(Color.parseColor("#546efe"));
-                        dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setAllCaps(false);
-                        dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.parseColor("#546efe"));
-                        dialog.getButton(AlertDialog.BUTTON_POSITIVE).setAllCaps(false);
-                    }
-                });
                 dialog.show();
             }
         }

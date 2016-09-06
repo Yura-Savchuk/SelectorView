@@ -1,2 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/macbookpro/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.0_ea68bf7c54d6ed2a4c835ad8faf6845ed31d66e0.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.0_37ebf6532e0a705e27c5b48251b41a87670ed3b3.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_cbb97f98c48abcff7ddd49750eacfa208ef27deb.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.0_d608e355b18b62378276e0ff0cfb8c409b6e57eb.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.0_fff77c6f3236ea9cd04d7092674c9f516d7bc46d.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_fda0a6e6bcfa5ea54fc3b087b9055c7333e4eed0.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.0_dc1a84fec4299d4a8baa225ebf242eb21cd7e14f.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.0_3e7bd00aa0f237ca04140aa923fa9348b3f49fe4.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_aaa3f277094e72898ff9c6c2e506ce735d0b569a.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.0_5818e7db8f2301d584928b3c91b436340f0302dd.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_079aa294b049f1815ed4cef1021ee68dd2312ca8.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="96e33a7aaee00ab64270e2a9887b8f9ef32c8b73">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.2.0_998751a88f98e4bf69dcb48264f9a5dc15f031ca.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/SelectorView/selectorview/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="cc868840b8c2ee34299f4f7b2755cdd063762cd2">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/SelectorView-selectorview-unspecified_1bb9f9e7c19b0d3737fc356a6d78db69074b3948.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.0_fdd8278317e927e2277f7e65eee15abb0b3bffbe.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.0_417a27693084001d68cf0733680d3f823e5b590e.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.0_e60294f5b0fa517e0de39f687942ef5aa6a359d8.jar" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.0_bf8f23b940b5a586d724146f6701c541ad5cccdb.jar" />
+    </item>
+
+</items>

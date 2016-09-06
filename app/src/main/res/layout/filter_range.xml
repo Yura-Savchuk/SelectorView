@@ -7,7 +7,7 @@
     android:paddingRight="12dp"
     android:paddingLeft="12dp">
 
-    <com.coulddog.selectorview.SelectorView
+    <com.coulcod.selectorview.SelectorView
         android:id="@+id/selectorView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

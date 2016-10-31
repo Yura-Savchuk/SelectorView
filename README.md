@@ -73,3 +73,8 @@ private static final String title = "Animals";
         }
     };
  ```
+# Add SelectorView to your project
+Gradle:
+``` java
+compile 'com.coulcod.selectorview:selectorview:1.0.1'
+ ```

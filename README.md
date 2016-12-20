@@ -10,7 +10,7 @@ An android custom view for single and multiple items selection.
 # Usage
 ##In Layout
 ``` xml
-<com.coulddog.selectorview.SelectorView
+<com.coulcod.selectorview.SelectorView
         android:id="@+id/selectorView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

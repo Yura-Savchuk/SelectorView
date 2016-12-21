@@ -64,7 +64,7 @@ private static final String title = "Animals";
                         .setValues(values)
                         .setTitle(title)
                         .setSelectionMode(mode)
-                        .setSelectionDialogCallback(callback)
+                        .setSelectionDialogDelegate(callback)
                         .setMultipleChoiceLayout(R.layout.select_multiple_choice)
                         .setListViewLayout(R.layout.select_list_view)
                         .create();

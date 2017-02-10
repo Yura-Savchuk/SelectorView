@@ -25,6 +25,7 @@ public class SelectorView extends RelativeLayout {
 
     public SelectorView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        setWillNotDraw(false);
 
         titleTextView = new TextView(context);
         valuesTextView = new TextView(context);

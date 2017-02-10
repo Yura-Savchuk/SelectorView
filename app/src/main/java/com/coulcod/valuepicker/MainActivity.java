@@ -14,13 +14,13 @@ import com.coulcod.selectorview.SelectionViewDialog;
 import com.coulcod.selectorview.SelectorView;
 import com.coulcod.selectorview.SelectorViewAdapter;
 import com.coulcod.selectorview.SelectorViewDialogDelegate;
+import com.coulcod.selectorview.SimpleSelectorViewDialogDelegate;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String title = "Animals";
     private static final List<CheckableString> testList = new ArrayList<CheckableString>() {{
         add(new CheckableString("Cow"));
         add(new CheckableString("Rabbit"));
@@ -38,30 +38,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.filter_range);
-
         SelectorView selectorView = (SelectorView) findViewById(R.id.selectorView);
-        SelectorViewAdapter adapter = new SelectorViewAdapter(selectorViewDialogDelegate, testList);
-        adapter.setTitle(title);
-        assert selectorView != null;
+        SelectorViewAdapter adapter = new SelectorViewAdapter(this, testList);
         selectorView.setAdapter(adapter);
-
     }
-
-    private SelectorViewDialogDelegate selectorViewDialogDelegate = new SelectorViewDialogDelegate() {
-        @Override
-        public void showDialog(@Nullable List<? extends Checkable> values, @NonNull String title, @NonNull SelectionMode mode, @NonNull SelectionDialogDelegate callback) {
-            if (values != null && values.size() != 0) {
-                final AlertDialog dialog = new SelectionViewDialog.Builder(MainActivity.this)
-                        .setValues(values)
-                        .setTitle(title)
-                        .setSelectionMode(mode)
-                        .setSelectionDialogDelegate(callback)
-                        .setMultipleChoiceLayout(R.layout.select_multiple_choice)
-                        .setListViewLayout(R.layout.select_list_view)
-                        .create();
-                dialog.show();
-            }
-        }
-    };
 
 }

@@ -63,6 +63,7 @@ public class SelectorView extends RelativeLayout {
     @SuppressWarnings("deprecation")
     private void initViews() {
         titleTextView.setId(android.R.id.text1);
+        valuesTextView.setId(android.R.id.text2);
         LayoutParams params = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         addView(titleTextView, params);
         params = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);

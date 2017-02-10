@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SelectorView.iml" filepath="$PROJECT_DIR$/SelectorView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SelectorView.iml" filepath="$PROJECT_DIR$/SelectorView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/selectorview/selectorview.iml" filepath="$PROJECT_DIR$/selectorview/selectorview.iml" />
     </modules>

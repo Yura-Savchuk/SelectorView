@@ -4,8 +4,7 @@ An android custom view for single and multiple items selection. This is super ea
 
 # Preview
 
-![Preview](https://raw.githubusercontent.com/coulCod/SelectorView/master/app/1.png)
-![Preview](https://github.com/coulCod/SelectorView/blob/master/app/2.png?raw=true)
+![Preview](https://raw.githubusercontent.com/coulCod/SelectorView/master/app/1.png)![Preview](https://github.com/coulCod/SelectorView/blob/master/app/2.png?raw=true)
 
 # Usage
 ##In Layout

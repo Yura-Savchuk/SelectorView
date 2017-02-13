@@ -1,6 +1,6 @@
 # SelectorView
 
-An android custom view for single and multiple items selection.
+An android custom view for single and multiple items selection. This is super easy to use and looks contains modern design. 
 
 # Preview
 
@@ -49,32 +49,12 @@ private static final String title = "Animals";
         setContentView(R.layout.filter_range);
 
         SelectorView selectorView = (SelectorView) findViewById(R.id.selectorView);
-        SelectorViewAdapter adapter = new SelectorViewAdapter(selectorViewDialogDelegate, testList);
-        adapter.setTitle(title);
-        assert selectorView != null;
+        SelectorViewAdapter adapter = new SelectorViewAdapter(this, testList);
         selectorView.setAdapter(adapter);
-
     }
-
-    private SelectorViewDialogDelegate selectorViewDialogDelegate = new SelectorViewDialogDelegate() {
-        @Override
-        public void showDialog(@Nullable List<? extends Checkable> values, @NonNull String title, @NonNull SelectionMode mode, @NonNull SelectionDialogCallback callback) {
-            if (values != null && values.size() != 0) {
-                final AlertDialog dialog = new SelectionViewDialog.Builder(MainActivity.this)
-                        .setValues(values)
-                        .setTitle(title)
-                        .setSelectionMode(mode)
-                        .setSelectionDialogDelegate(callback)
-                        .setMultipleChoiceLayout(R.layout.select_multiple_choice)
-                        .setListViewLayout(R.layout.select_list_view)
-                        .create();
-                dialog.show();
-            }
-        }
-    };
  ```
 # Add SelectorView to your project
 Gradle:
 ``` java
-compile 'com.coulcod.selectorview:selectorview:1.0.2'
+compile 'com.coulcod.selectorview:selectorview:1.0.3'
  ```

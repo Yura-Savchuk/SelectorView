@@ -25,7 +25,7 @@ An android custom view for single and multiple items selection. This is super ea
         />
 ```
 ##In Source
-in **Activity of Fragment**
+in **Activity or Fragment**
 ``` java
 
 private static final String title = "Animals";

@@ -5,12 +5,10 @@
 /build
 /captures
 .externalNativeBuild
-gradlew
 *.bat
 
 # Ignore gradle files
 .gradle/
-/gradle
 
 #built application files
 *.apk

@@ -31,7 +31,7 @@ bin/
 gen/
 
 # Local configuration file (sdk path, etc)
-/local.properties
+local.properties
 
 # Mac OS X clutter
 *.DS_Store

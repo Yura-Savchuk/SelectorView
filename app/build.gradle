@@ -10,6 +10,7 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -20,7 +21,7 @@ android {
 }
 
 ext {
-    supportLibraryVersion = '25.1.1';
+    supportLibraryVersion = '25.2.0';
 }
 
 dependencies {
@@ -30,4 +31,8 @@ dependencies {
     compile "com.android.support:cardview-v7:${supportLibraryVersion}"
     compile project(path: ':selectorview')
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    //test
+    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.2.2') {
+        exclude module: 'support-annotations'
+    }
 }

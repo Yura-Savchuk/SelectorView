@@ -26,9 +26,4 @@ public class CheckableStringTest {
         assertEquals(copy, checkableStr);
     }
 
-    @Test
-    public void fail_test() {
-        assertEquals(1, 2);
-    }
-
 }

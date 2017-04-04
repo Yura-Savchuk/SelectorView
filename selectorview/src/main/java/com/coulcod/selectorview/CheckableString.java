@@ -33,4 +33,24 @@ public class CheckableString implements Checkable {
         copy.checked = checked;
         return copy;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        CheckableString that = (CheckableString) o;
+
+        if (checked != that.checked) return false;
+        return value != null ? value.equals(that.value) : that.value == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = value != null ? value.hashCode() : 0;
+        result = 31 * result + (checked ? 1 : 0);
+        return result;
+    }
+
 }

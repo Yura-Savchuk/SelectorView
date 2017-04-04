@@ -2,130 +2,121 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.1_bca0da46b2ef3785ca07f9422c5d868a2177d49a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.1_d6eca1054ef334b668b7633817531b08c47f4ace.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/97940b2ac611d85040e04657c7fe165f65b76846/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.1_731d121ef525383f6f41758bfde84a9dab2e4c9f.jar" />
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_115ed5ad2d238625152a9f9ba555eceb9ed0c128/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/b613d318d1894801d7c1a9d3097fd01e78a9e6ba/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.1_8b1eb0b762f39f1ba219f81db226734e686d397b.jar" />
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10d3f671fd0cdc867bc14c5419601ae242a4973d/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/seotm/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta5/constraint-layout-solver-1.0.0-beta5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ff0dad5e4fc720f478ce8b5f6edf76a932d9b886">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-beta5_0c1e0df996bfba9cda1e9f07923835c53116648d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.1_66f08829f2f93dee465570025fa4058d63236c01.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-beta5/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dce0f3de11781e1ee758cba483871b598c9d4931">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support.constraint-constraint-layout-1.0.0-beta5_011e760f363b6a4424d026bd4b03546d6252514f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.1_6d2bdab0e77e74fcb3bb2591aa2755a1de694bd7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.1.1_a6bc08501cf12dc375e1aba2d6f229b4d2788544.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/SelectorView/selectorview/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="029bb633856ca06233a2a77da16c19495e28f119">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/SelectorView-selectorview-unspecified_3d16f727a5f5b44613951cdec471cdd5becdb789.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.1_fb487fb5b81658a7e70b122585a69921642ab7ef.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.1_88ad034e843de37789f6bf9efdd4d2ac21a92c42.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/7a2a4afbdbe4b1369173535211c1c57e79577bf5/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.1_283f830888f29ee5ac0e5eda15072bee08e77d3a.jar" />
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2ea380fe32467ce1275ccebb05dffeb013e48946/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/e8b981f92859c85679b41564e66db6e3728ecc65/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_172813213dfbb9a72d8a43bfa6ce0316fd875dfa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/6dc5f4b521a49b464737c304182574af0720714f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_adeebfece862209f05f7a053efe9e8247f4e76f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/83ba9129a67977718d4da1d19eeed515810dfe7d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b9ccf2b43c7062f108542e64bdebfe258a9ac6be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a2bbf0c083b30e0b814c38c09ebb8df1e147a33">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_63ce914aa02222631552a83347f687c59438c242/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4a0bbc099024768f408c33fc09f62d1442e55a6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.1_88ad034e843de37789f6bf9efdd4d2ac21a92c42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/3514b19c92db4dec56c64ba18006f46d63a55698/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a496016ba3f41c7290db057533e9a19ea783f652/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/053fa01fb69882055aaf020fcc462ea99974de12/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.1_b7c64a4322c177dbfb1cfc33b5c8b9fa16351bb2.jar" />
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3c87a97510383162a47e2c0315cd8e44e448195b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/cee0f2629ce8773d8ea582fc6d51187f106ec48b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_238ab9e09cfb992086df287f6fcb3338958f63cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seotm/.android/build-cache/d264ac57e56cc8ab4efcdb4d653a8df53a8c849d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/seotm/Projects/AndroidStudio/SelectorView/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9b6904b25c74432c5b8d186fe35578a1cb76894a/classes.dex" />
     </item>
 
 </items>

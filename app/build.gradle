@@ -1,4 +1,16 @@
 apply plugin: 'com.android.application'
+apply plugin: 'spoon'
+
+spoon {
+    // for debug output
+    debug = true
+
+    // To execute the tests device by device */
+    sequential = true
+
+    // To grant permissions to Android M >= devices */
+    grantAllPermissions = true
+}
 
 android {
     compileSdkVersion 25

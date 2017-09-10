@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.coulcod.selectorview.DeselactableRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/button1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

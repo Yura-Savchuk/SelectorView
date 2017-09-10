@@ -19,7 +19,7 @@
         app:svValueTextColor="@android:color/black"
         app:svShowDefaultArrow="true"
         app:svArrowColor="?attr/colorAccent"
-        app:svSelectionMode="multiple"
+        app:svSelectionMode="single"
         app:svSelectorViewMode="appearsTextField"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

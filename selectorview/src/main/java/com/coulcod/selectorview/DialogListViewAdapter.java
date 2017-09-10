@@ -8,30 +8,22 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Checkable;
+import android.widget.CompoundButton;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
 
 public class DialogListViewAdapter extends BaseAdapter {
 
-    @NonNull
-    private final List<? extends com.coulcod.selectorview.Checkable> values;
-    @NonNull
-    private final SelectionMode selectionMode;
-    @Nullable
-    private WeakReference<ListView> listViewWeakReference;
-    @Nullable
-    private LayoutInflater layoutInflater;
-    /**
-     * That must be layout file with {@link TextView} what implement interface {@link Checkable} , whit id @android.R.id.button1
-     */
     private int singleChoiceLayout = R.layout.default_single_choice;
-    /**
-     * That must be layout file with {@link TextView} what implement interface {@link Checkable} , whit id @android.R.id.button1
-     */
+    private int singleNoDeselectLayout = R.layout.default_single_not_deselect;
     private int multipleChoiceLayout = R.layout.default_multiple_choice;
+
+    private final List<? extends com.coulcod.selectorview.Checkable> values;
+    private final SelectionMode selectionMode;
+    private WeakReference<ListView> listViewWeakReference;
+    private LayoutInflater layoutInflater;
 
     public DialogListViewAdapter(@NonNull List<? extends com.coulcod.selectorview.Checkable> values, @NonNull SelectionMode selectionMode) {
         this.values = values;
@@ -65,12 +57,8 @@ public class DialogListViewAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
         if (convertView == null) {
-            convertView = onCreateView(parent);
-            if (selectionMode == SelectionMode.Single || selectionMode == SelectionMode.SingleNoDeselect) {
-                viewHolder = new SingleChoiceViewHolder(convertView);
-            } else {
-                viewHolder = new MultipleChoiceViewHolder(convertView);
-            }
+            viewHolder = onCreateView(parent);
+            convertView = viewHolder.itemView;
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -80,16 +68,15 @@ public class DialogListViewAdapter extends BaseAdapter {
         return convertView;
     }
 
-    @NonNull private View onCreateView(@NonNull ViewGroup parent) {
-        View createdView;
+    @NonNull private ViewHolder onCreateView(@NonNull ViewGroup parent) {
         if (layoutInflater == null) layoutInflater = LayoutInflater.from(parent.getContext());
-
-        if (selectionMode == SelectionMode.Single || selectionMode == SelectionMode.SingleNoDeselect) {
-            createdView = layoutInflater.inflate(singleChoiceLayout, parent, false);
-        } else {
-            createdView = layoutInflater.inflate(multipleChoiceLayout, parent, false);
+        if (selectionMode == SelectionMode.SingleNoDeselect) {
+            return new SingleChoiceViewHolder(layoutInflater.inflate(singleNoDeselectLayout, parent, false));
         }
-        return createdView;
+        if (selectionMode == SelectionMode.Single) {
+            return new SingleChoiceViewHolder(layoutInflater.inflate(singleChoiceLayout, parent, false));
+        }
+        return new MultipleChoiceViewHolder(layoutInflater.inflate(multipleChoiceLayout, parent, false));
     }
 
     private void onBindView(@NonNull ViewHolder viewHolder, int position) {
@@ -109,8 +96,12 @@ public class DialogListViewAdapter extends BaseAdapter {
     }
 
     private abstract class ViewHolder implements View.OnClickListener {
+
         protected int position;
+        private View itemView;
+
         protected ViewHolder(View itemView) {
+            this.itemView = itemView;
             itemView.setOnClickListener(this);
         }
 
@@ -141,36 +132,31 @@ public class DialogListViewAdapter extends BaseAdapter {
     }
 
     private class SingleChoiceViewHolder extends ViewHolder {
-        private final TextView singleChoice;
+        private final CompoundButton singleChoice;
 
         private SingleChoiceViewHolder(View itemView) {
             super(itemView);
-            this.singleChoice = (TextView) itemView.findViewById(android.R.id.button1);
+            this.singleChoice = (CompoundButton) itemView.findViewById(android.R.id.button1);
         }
 
         @Override
         public void onClick(View view) {
-            boolean checked = ((Checkable) singleChoice).isChecked();
-            if (checked) {
-                values.get(position).setSelected(true);
-            } else if (selectionMode == SelectionMode.Single) {
-                values.get(position).setSelected(false);
-            }
+            values.get(position).setSelected(singleChoice.isChecked());
             super.onClick(view);
         }
     }
 
     private class MultipleChoiceViewHolder extends ViewHolder {
-        private final TextView multipleChoice;
+        private final CompoundButton multipleChoice;
 
         private MultipleChoiceViewHolder(View itemView) {
             super(itemView);
-            this.multipleChoice = (TextView) itemView.findViewById(android.R.id.button2);
+            this.multipleChoice = (CompoundButton) itemView.findViewById(android.R.id.button2);
         }
 
         @Override
         public void onClick(View view) {
-            values.get(position).setSelected(((Checkable) multipleChoice).isChecked());
+            values.get(position).setSelected(multipleChoice.isChecked());
             super.onClick(view);
         }
     }

@@ -1,7 +1,6 @@
 package com.coulcod.valuepicker;
 
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -17,7 +16,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final List<CheckableString> testList = new ArrayList<CheckableString>() {{
+    private static final List<CheckableString> ANIMALS = new ArrayList<CheckableString>() {{
         add(new CheckableString("Cow"));
         add(new CheckableString("Rabbit"));
         add(new CheckableString("Fox"));
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         add(new CheckableString("Chicken"));
     }};
 
-    private static final List<CheckableString> cars = new ArrayList<CheckableString>() {{
+    private static final List<CheckableString> CARS = new ArrayList<CheckableString>() {{
         add(new CheckableString("Lexus"));
         add(new CheckableString("Mercedes"));
         add(new CheckableString("Ferrari"));
@@ -48,14 +47,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void selectValueWithSelectorView() {
         SelectorView selectorView = (SelectorView) findViewById(R.id.selectorView);
-        SelectorViewAdapter adapter = new SelectorViewAdapter(this, testList);
+        SelectorViewAdapter adapter = new SelectorViewAdapter(this);
+        adapter.setValues(ANIMALS);
         selectorView.setAdapter(adapter);
     }
 
     private void selectValueWithTextView() {
         final TextView textView = (TextView) findViewById(R.id.textView);
         final SelectDialogDelegate dialogDelegate = new SelectDialogDelegate(this);
-        dialogDelegate.setValues(cars);
+        dialogDelegate.setValues(CARS);
         dialogDelegate.setTitle("Cars");
         dialogDelegate.setSelectionDialogDelegate(new SelectionDialogDelegate() {
             @Override
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getSelectedText() {
-        for (CheckableString car : cars) {
+        for (CheckableString car : CARS) {
             if (car.isSelected()) {
                 return car.getText();
             }

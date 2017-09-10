@@ -118,7 +118,7 @@ public class SelectorView extends RelativeLayout {
         this.adapter = adapter;
         if (adapter != null) {
             if (P.titleText != null) adapter.title = (String) P.titleText;
-            if (adapter.selectionMode == null) adapter.selectionMode = P.selectionMode;
+            adapter.selectionMode = P.selectionMode;
             adapter.setSelectorView(this);
             setOnClickListener(adapter.onSelectorViewClick);
             adapter.notifyDataSetChanged();

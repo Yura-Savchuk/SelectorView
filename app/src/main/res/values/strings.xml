@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ValuePicker</string>
     <string name="animals">Animals</string>
+    <string name="select_car">Select Car</string>
 </resources>

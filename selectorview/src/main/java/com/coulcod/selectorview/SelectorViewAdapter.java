@@ -13,10 +13,10 @@ public class SelectorViewAdapter extends SelectDialogDelegate {
     private SelectorView selectorView;
 
     /**
-     * Use {@link #SelectorViewAdapter(SelectorViewDialogDelegate)} and {@link SelectorViewAdapter#setValues(List)} instead.
+     * Use {@link #SelectorViewAdapter(DialogDelegate)} and {@link SelectorViewAdapter#setValues(List)} instead.
      */
     @Deprecated
-    public SelectorViewAdapter(@Nullable List<String> values, @NonNull SelectorViewDialogDelegate delegate) {
+    public SelectorViewAdapter(@Nullable List<String> values, @NonNull DialogDelegate delegate) {
         super(delegate);
         if (values != null) {
             List<CheckableString> checkableStringValues = new ArrayList<>();
@@ -27,15 +27,15 @@ public class SelectorViewAdapter extends SelectDialogDelegate {
         }
     }
 
-    public SelectorViewAdapter(@NonNull SelectorViewDialogDelegate delegate) {
+    public SelectorViewAdapter(@NonNull DialogDelegate delegate) {
         super(delegate);
     }
 
     /**
-     * Use {@link #SelectorViewAdapter(SelectorViewDialogDelegate)} and {@link SelectorViewAdapter#setValues(List)} instead.
+     * Use {@link #SelectorViewAdapter(DialogDelegate)} and {@link SelectorViewAdapter#setValues(List)} instead.
      */
     @Deprecated
-    public SelectorViewAdapter(@NonNull SelectorViewDialogDelegate delegate, @Nullable List<? extends Checkable> values) {
+    public SelectorViewAdapter(@NonNull DialogDelegate delegate, @Nullable List<? extends Checkable> values) {
         super(delegate);
         setValues(values);
     }

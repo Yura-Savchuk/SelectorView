@@ -21,4 +21,5 @@ public class SelectorViewController {
     SelectorViewMode selectorViewMode;
     SelectionViewDrawer selectionViewDrawer;
 
+    public boolean inputValue;
 }

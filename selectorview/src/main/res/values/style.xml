@@ -21,6 +21,7 @@
         </attr>
         <attr name="svTitleTextSize" format="dimension"/>
         <attr name="svValuesTextSize" format="dimension"/>
+        <attr name="svInputValue" format="boolean"/>
     </declare-styleable>
 
 </resources>

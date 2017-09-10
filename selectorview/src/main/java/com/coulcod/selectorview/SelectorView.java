@@ -56,6 +56,8 @@ public class SelectorView extends RelativeLayout {
         P.selectionViewDrawer = new SelectionViewDrawer(a.getColor(R.styleable.SelectorView_svArrowColor,
                 ViewCompatUtil.getColor(context,android.R.color.holo_blue_light)));
 
+        P.inputValue = a.getBoolean(R.styleable.SelectorView_svInputValue, false);
+
         a.recycle();
 
         initViews();
@@ -117,8 +119,9 @@ public class SelectorView extends RelativeLayout {
     public void setAdapter(@Nullable SelectorViewAdapter adapter) {
         this.adapter = adapter;
         if (adapter != null) {
-            if (P.titleText != null) adapter.title = (String) P.titleText;
-            adapter.selectionMode = P.selectionMode;
+            if (P.titleText != null) adapter.setTitle((String) P.titleText);
+            adapter.setSelectionMode(P.selectionMode);
+            adapter.setInputValue(P.inputValue);
             adapter.setSelectorView(this);
             setOnClickListener(adapter.onSelectorViewClick);
             adapter.notifyDataSetChanged();
@@ -127,7 +130,7 @@ public class SelectorView extends RelativeLayout {
 
     void updateViewState() {
         if (adapter != null) {
-            String titleText = adapter.title;
+            String titleText = adapter.props.title;
             if (titleText == null) {
                 throw new IllegalArgumentException("Please, set title through SelectorViewAdapter " +
                         "or SelectorView.setTitle(), or in view layout.");
@@ -138,7 +141,7 @@ public class SelectorView extends RelativeLayout {
                     if (item.isSelected()) {
                         if (selectedText.isEmpty()) {
                             selectedText = item.getText();
-                            if (adapter.selectionMode == SelectionMode.Single) {
+                            if (adapter.props.mode == SelectionMode.Single) {
                                 break;
                             }
                         } else {
@@ -191,7 +194,7 @@ public class SelectorView extends RelativeLayout {
     public void setSelectionMode(@NonNull SelectionMode selectionMode) {
         P.selectionMode = selectionMode;
         if (adapter != null) {
-            adapter.selectionMode = selectionMode;
+            adapter.props.mode = selectionMode;
             adapter.notifyDataSetChanged();
         }
     }

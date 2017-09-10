@@ -12,13 +12,11 @@ import java.util.List;
 
 public class SelectDialogDelegate implements SelectionDialogDelegate {
 
-    private CheckableValues values;
-    private final SelectorViewDialogDelegate delegate;
+    private final DialogDelegate delegate;
     SelectionDialogDelegate selectionDialogDelegate;
-    String title;
-    SelectionMode selectionMode = SelectionMode.Single;
+    final DialogProperties props = new DialogProperties();
 
-    public SelectDialogDelegate(SelectorViewDialogDelegate delegate) {
+    public SelectDialogDelegate(DialogDelegate delegate) {
         this.delegate = delegate;
     }
 
@@ -28,16 +26,16 @@ public class SelectDialogDelegate implements SelectionDialogDelegate {
 
     public void setValues(@Nullable List<? extends Checkable> values) {
         if (values == null) {
-            this.values = null;
+            props.values = null;
         }
-        this.values = new CheckableValues(values);
+        props.values = new CheckableValues(values);
     }
 
     public List<? extends Checkable> getValues() {
-        if (values == null) {
+        if (props.values == null) {
             return null;
         }
-        return values.values;
+        return props.values.values;
     }
 
     public void setSelectionDialogDelegate(SelectionDialogDelegate selectionDialogDelegate) {
@@ -45,18 +43,22 @@ public class SelectDialogDelegate implements SelectionDialogDelegate {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        props.title = title;
     }
 
     public void setSelectionMode(@NonNull SelectionMode selectionMode) {
-        this.selectionMode = selectionMode;
+        props.mode = selectionMode;
+    }
+
+    public void setInputValue(boolean inputValue) {
+        props.inputValue = inputValue;
     }
 
     public void showDialog() {
-        if (values == null) {
+        if (props.values == null) {
             throw new IllegalArgumentException("Missing values. Set values with a method setValues(List) before showing dialog.");
         }
-        delegate.showDialog(values.temporaryValues, title, selectionMode, this);
+        delegate.showDialog(props, this);
     }
 
     @Override
@@ -64,7 +66,7 @@ public class SelectDialogDelegate implements SelectionDialogDelegate {
         if (selectionDialogDelegate == null) {
             throw new IllegalArgumentException("Missing selection dialog delegate. Set selectionDialogDelegate with a method setSelectionDialogDelegate(SelectionDialogDelegate) before showing dialog.");
         }
-        values.updateSelectedValues();
+        props.values.updateSelectedValues();
         selectionDialogDelegate.onComplete();
     }
 }

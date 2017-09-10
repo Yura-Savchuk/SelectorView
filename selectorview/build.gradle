@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 
-def versionName() {
+//comand to generate build: ./gradlew clean build generateRelease
+static def versionName() {
     return "1.0.4"
 }
 
@@ -33,7 +34,7 @@ ext {
 }
 
 ext {
-    supportLibraryVersion = '25.1.1';
+    supportLibraryVersion = '25.3.1';
 }
 
 dependencies {

@@ -10,7 +10,7 @@ import java.util.List;
  * Created by seotm on 10.02.17.
  */
 
-public class SimpleSelectorViewDialogDelegate implements SelectorViewDialogDelegate {
+public class SimpleSelectorViewDialogDelegate implements DialogDelegate {
 
     private final Activity activity;
 
@@ -19,12 +19,10 @@ public class SimpleSelectorViewDialogDelegate implements SelectorViewDialogDeleg
     }
 
     @Override
-    public void showDialog(@NonNull List<? extends Checkable> values, @NonNull String title, @NonNull SelectionMode mode, @NonNull SelectionDialogDelegate callback) {
-        if (values.size() != 0) {
-            final AlertDialog dialog = new SelectionViewDialog.Builder(activity)
-                    .setValues(values)
-                    .setTitle(title)
-                    .setSelectionMode(mode)
+    public void showDialog(@NonNull DialogProperties properties, @NonNull SelectionDialogDelegate callback) {
+        if (!properties.isEmptyValues()) {
+            final AlertDialog dialog = new SelectionViewDialogBuilder(activity)
+                    .setProperties(properties)
                     .setSelectionDialogDelegate(callback)
                     .create();
             dialog.show();

@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 //comand to generate build: ./gradlew clean build generateRelease
 static def versionName() {
-    return "1.0.4"
+    return "1.0.5"
 }
 
 android {

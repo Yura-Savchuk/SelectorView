@@ -30,6 +30,10 @@ public class DialogListViewAdapter extends BaseAdapter {
         this.selectionMode = selectionMode;
     }
 
+    public void setSingleNoDeselectLayout(int singleNoDeselectLayout) {
+        this.singleNoDeselectLayout = singleNoDeselectLayout;
+    }
+
     public void setSingleChoiceLayout(int singleChoiceLayout) {
         this.singleChoiceLayout = singleChoiceLayout;
     }

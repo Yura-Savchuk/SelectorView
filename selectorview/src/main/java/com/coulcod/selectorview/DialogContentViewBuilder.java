@@ -51,7 +51,10 @@ class DialogContentViewBuilder {
 
     private void prepareListView(ListView listView) {
         DialogListViewAdapter adapter = new DialogListViewAdapter(values, selectionMode);
-        if (singleChoiceLayout != EMPTY) adapter.setSingleChoiceLayout(singleChoiceLayout);
+        if (singleChoiceLayout != EMPTY) {
+            adapter.setSingleChoiceLayout(singleChoiceLayout);
+            adapter.setSingleNoDeselectLayout(singleChoiceLayout);
+        }
         if (multipleChoiceLayout != EMPTY) adapter.setMultipleChoiceLayout(multipleChoiceLayout);
         listView.setAdapter(adapter);
         adapter.setListView(listView);
